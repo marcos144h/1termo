@@ -1,4 +1,4 @@
-2
+
 
 while True:
     try:
@@ -7,15 +7,14 @@ while True:
        andar_destino = int(input("qual o andar que voce deseja ir?>"))
        if andar_destino > andar_atual:
            print("subindo...")
-           print("chegou ao andar destino")
+           print(f"chegou ao andar {andar_destino}° andar")
        elif andar_destino < andar_atual:
            print("descendo..")
-           print("chegou ao andar destino")
+           print(f"chegou ao  {andar_destino}° andar")
        else:
            print("voce ja esta nesse andar.")
        break 
 
-    except ValueError:
-     print("Entrada inválida. Por favor, insira um número válido.")
-
+    except ValueError :
+     print("numero invalido")
      
